@@ -64,8 +64,8 @@ func main() {
 			array := strings.Split(e.Name(), ".")
 			length := len(array)
 			if length > 1 {
-				final := ("." + array[(length-1)])
-				log.Println(e.Name() + " is a " + final + " file")
+				final := (array[(length - 1)])
+				log.Println(e.Name() + " is a ." + final + " file")
 				createfolder(final)
 				sortfile(e.Name(), final)
 			}
